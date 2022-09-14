@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> newdash </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+body{
+    font-size: 15px;
+    line-height: 1.52;
+    background-color: #4f5c63;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+  body{
+      background:linear-gradient(purple,blue,pink,purple);
+  }
+.section-padding{
+    padding: 60px 0px;
+}
+.marb-35{
+    margin-bottom: 35px;
+}
+#menu-filter ul li{
+    display: inline-block;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+#menu-filter ul li a{
+    padding:10px 20px;
+    font-size: 14px;
+    color: #f0e3e3;
+    border-radius:0px;
+    border: 1px solid #BBBBBB;
+    text-decoration: none;
+    cursor: pointer;
+}
+#menu-filter ul li a.activ, #menu-filter ul li a:hover{
+    background: #FFB03B;
+    color: #fff;
+    border: 1px solid #FFB03B;
+}
+
+        </style>
+    </head>
+    <body>
+         <section id="menu-list" class="section-padding">
+             <div class="container-fluid">
+                 <div class="row">
+                  <div class="col-md-12 text-center marb-35">
+                      <h1 class="header">ADMIN DASHBOARD </h1>
+                  </div>
+                   <div class="col-md-12 text-center" id="menu-filter">
+                    <ul>
+
+                        <li><a class="filter active" data-filter=".menu-shop" >Show all</a></li>
+                        <li><a class="filter" onclick="shop()">View of SHOP</a></li>
+                        <li><a class="filter" onclick="VS()">verify shop</a></li>
+                        <li><a class="filter" data-filter=".O" > ORDER</a></li>
+                        <li><a class="filter" data-filter=".V&C" >View all Customer</a></li>
+                        <li><a class="filter" data-filter=".V&C" >verify Customer</a></li>
+                        <li><a class="filter" data-filter=".logout" >LOGOUT</a></li>
+
+                    </ul>
+                      
+                   </div>
+
+                
+
+    </body>
+</html>
